@@ -32,7 +32,3 @@ The `queries.sql` file demonstrates:
 
 ## Bonus Features
 - ✅ UNION and CTE implemented for additional query complexity
-
-## Author
-Developed as part of a SQL practical task, themed around Counter-Strike 2.
-Feel free to reuse, extend or adapt it to your own game-themed database design.
