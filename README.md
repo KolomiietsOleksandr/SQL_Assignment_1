@@ -16,13 +16,19 @@ The database is designed to represent CS2 player data and match statistics:
 ## SQL Query Features
 The `queries.sql` file demonstrates:
 
-- ✅ **JOINs across 5 tables** to combine player, match, map, role, and game mode data
-- ✅ **WHERE clause** to filter matches with high earnings
-- ✅ **GROUP BY and HAVING** to find players with multiple match participations
-- ✅ **ORDER BY** to rank maps by average duration
-- ✅ **LIMIT** to return a subset of players
-- ⭐ **UNION** to merge player nicknames and map names
-- ⭐ **CTE (WITH)** to define and use a filtered match set (PopularMatches)
+✅ Multi-table JOINs: A 5-table JOIN using conditional CASE for role formatting
+
+✅ WHERE with subquery: Filtering matches above average earnings
+
+✅ GROUP BY + HAVING + ROLLUP: Aggregating match counts per player with total row
+
+✅ ORDER BY + WINDOW FUNCTION: Using RANK() to order maps by duration
+
+✅ LIMIT + OFFSET: Basic pagination
+
+⭐ UNION with filters: Combining player nicknames and long-duration maps
+
+⭐ CTE + EXISTS: Identifying players in high-earning matches with reusable logic
 
 ## Files Included
 - `create_tables.sql`: Defines schema and table relationships
