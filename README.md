@@ -1,8 +1,5 @@
 # 🎮 CS2-Themed SQL Assignment
 
-## Overview
-This project showcases SQL skills using a Counter-Strike 2 (CS2) theme. It includes database schema creation, realistic sample data insertion, and a set of queries using SQL constructs such as JOINs, filtering, grouping, sorting, and more advanced features.
-
 ## Schema Description
 The database is designed to represent CS2 player data and match statistics:
 
@@ -13,7 +10,7 @@ The database is designed to represent CS2 player data and match statistics:
 - **GameModes**: Lists available game modes (e.g., Competitive, Casual).
 - **MapModes**: Many-to-many relationship between Maps and GameModes.
 
-## SQL Query Features
+## SQL Query Description
 The `queries.sql` file demonstrates:
 
 ✅ Multi-table JOINs: A 5-table JOIN using conditional CASE for role formatting
@@ -26,15 +23,7 @@ The `queries.sql` file demonstrates:
 
 ✅ LIMIT + OFFSET: Basic pagination
 
-⭐ UNION with filters: Combining player nicknames and long-duration maps
+✅ UNION with filters: Combining player nicknames and long-duration maps
 
-⭐ CTE + EXISTS: Identifying players in high-earning matches with reusable logic
+✅ CTE + EXISTS: Identifying players in high-earning matches with reusable logic
 
-## Files Included
-- `create_tables.sql`: Defines schema and table relationships
-- `insert_data.sql`: Populates the schema with sample data
-- `queries.sql`: Demonstrates SQL logic covering requirements and bonus features
-- `README.md`: Schema explanation and logic walkthrough
-
-## Bonus Features
-- ✅ UNION and CTE implemented for additional query complexity
